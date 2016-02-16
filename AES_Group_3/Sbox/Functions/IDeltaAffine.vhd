@@ -1,21 +1,14 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: EEE6225 - System Design
+-- Engineer: Matthew Walton
 -- 
--- Create Date:    14:56:55 02/12/2016 
--- Design Name: 
--- Module Name:    IDeltaAffine - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Create Date:	02/13/2016 
+-- Design Name: 	Top Level Generic S-BOX
+-- Module Name:   Inverse Delta and Affine - RTL 
+-- Project Name:	Advanced Encryption Standard
+-- Target Devices:
+-- Tool versions:	
+-- Description:
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

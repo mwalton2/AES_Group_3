@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\Projets\AES_Group_3\AES_Group_3\SBox.ncd
+OUTFILE=C:\Xilinx\Projets\AES_Group_3\AES_Group_3\SBox.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Xilinx\Projets\AES_Group_3\AES_Group_3
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,56 +1,32 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: EEE6225 - System Design
+-- Engineer: Matthew Walton
 -- 
--- Create Date:    15:06:07 02/12/2016 
--- Design Name: 
--- Module Name:    SquareX - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Create Date:	02/13/2016 
+-- Design Name: 	Top Level Generic S-BOX
+-- Module Name:   Square X - RTL 
+-- Project Name:	Advanced Encryption Standard
+-- Target Devices:
+-- Tool versions:	
+-- Description:
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity SquareX is
-    Port ( Data : in  STD_LOGIC_VECTOR (3 downto 0);
-           Output : out  STD_LOGIC_VECTOR (3 downto 0));
+    Port ( Data : in  STD_LOGIC_VECTOR (3 downto 0);			-- Data input MSB 3:0 LSB
+           Output : out  STD_LOGIC_VECTOR (3 downto 0));		-- Data output MSB 3:0 LSB
 end SquareX;
 
 architecture RTL of SquareX is
 
 begin
-	--Square X
+	--Performs X^2 Operation
 	Output <= (
-			
-		 	
-		 	
 		 	Data(3)
 		&	(Data(3) xor Data(2))
 		&	(Data(2) xor Data(1))
 		&	(Data(1) xor Data(0) xor Data(3))
-	
-		--	(Data(1) xor Data(0) xor Data(3))
-	--	 &	(Data(2) xor Data(1))
-	--	 &	(Data(3) xor Data(2))
-	--	 &	Data(3)
 	);
 end RTL;
 

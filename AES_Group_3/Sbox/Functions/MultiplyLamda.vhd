@@ -1,55 +1,31 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: EEE6225 - System Design
+-- Engineer: Matthew Walton
 -- 
--- Create Date:    14:59:14 02/12/2016 
--- Design Name: 
--- Module Name:    MultiplyLamda - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Create Date:	02/13/2016 
+-- Design Name: 	Top Level Generic S-BOX
+-- Module Name:   Multiply Lamda - RTL 
+-- Project Name:	Advanced Encryption Standard
+-- Target Devices:
+-- Tool versions:	
+-- Description:
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity MLamda is
-    Port ( Data : in  STD_LOGIC_VECTOR (3 downto 0);
-           Output : out  STD_LOGIC_VECTOR (3 downto 0));
+    Port ( Data : in  STD_LOGIC_VECTOR (3 downto 0);			-- Data input MSB 3:0 LSB
+           Output : out  STD_LOGIC_VECTOR (3 downto 0));		-- Data output MSB 3:0 LSB
 end MLamda;
 
 architecture RTL of MLamda is
 
-begin
---Multiply Lamda
-	Output <= (
-		
-		 
-		 
+begin 		--Multiply X by Lamda Constant
+	Output <= (		 
 		 	(Data(0) xor Data(2))
 			&	(Data(0) xor Data(1) xor Data(2) xor Data(3))
 			&	Data(3)
 			&	Data(2)
-	
-	--		Data(2)
-	--	 &	Data(3)
-	--	 &	(Data(0) xor Data(2))
-	--	 &	(Data(0) xor Data(1) xor Data(2) xor Data(3))
 	);
 end RTL;

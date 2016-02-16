@@ -7,6 +7,7 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/SBox - RTL C:|Xilinx|Projets|AES_Group_3|AES_Group_3|Sbox|SBox.vhd</ClosedNode>
          <ClosedNode>/SBox - RTL C:|Xilinx|Projets|AES_Group_3|AES_Group_3|Sbox|SBox.vhd/HA17 - Bit4Mul - RTL</ClosedNode>
          <ClosedNode>/SBox - RTL C:|Xilinx|Projets|AES_Group_3|AES_Group_3|Sbox|SBox.vhd/HA18 - Bit4Mul - RTL</ClosedNode>
          <ClosedNode>/SBox - RTL C:|Xilinx|Projets|AES_Group_3|AES_Group_3|Sbox|SBox.vhd/HA9 - Bit4Mul - RTL</ClosedNode>
@@ -23,27 +24,27 @@
          <ClosedNode>/TB_SquareX - behavior C:|Xilinx|Projets|AES_Group_3|AES_Group_3|Sbox|TestBlocks|TB_SquareX.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>HA10 - Latch4 - RTL (C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Latch.vhd)</SelectedItem>
+         <SelectedItem>SBox - RTL (C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/SBox.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000028c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000028c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>HA10 - Latch4 - RTL (C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Latch.vhd)</CurrentItem>
+      <CurrentItem>SBox - RTL (C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/SBox.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000149000000010000000100000000000000000000000064ffffffff000000810000000000000001000001490000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -73,18 +74,22 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem>Analyze Design Using ChipScope</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000149000000010000000100000000000000000000000064ffffffff000000810000000000000001000001490000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000138000000010000000100000000000000000000000064ffffffff000000810000000000000001000001380000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem>Analyze Design Using ChipScope</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>

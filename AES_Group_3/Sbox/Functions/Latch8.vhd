@@ -1,38 +1,22 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: EEE6225 - System Design
+-- Engineer: Matthew Walton
 -- 
--- Create Date:    13:24:58 02/13/2016 
--- Design Name: 
--- Module Name:    Latch8 - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Create Date:	02/13/2016 
+-- Design Name: 	Top Level Generic S-BOX
+-- Module Name:   Latch 8 - RTL 
+-- Project Name:	Advanced Encryption Standard
+-- Target Devices:
+-- Tool versions:	
+-- Description:
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity Latch8 is
-    Port ( Signal_In : in  STD_LOGIC_VECTOR (7 downto 0);
-           Clk : in  STD_LOGIC;
-           Signal_Out : out  STD_LOGIC_VECTOR (7 downto 0));
+    Port ( Signal_In : in  STD_LOGIC_VECTOR (7 downto 0);				-- Data input MSB 3:0 LSB
+           Clk : in  STD_LOGIC;													-- Sync Pulse
+           Signal_Out : out  STD_LOGIC_VECTOR (7 downto 0));			-- Data output MSB 3:0 LSB
 end Latch8;
 
 architecture RTL of Latch8 is
@@ -47,7 +31,6 @@ begin
 	
 	process
 	begin
-		--Signal_Out <= "0000";
 		wait until Clk'event and Clk = '1' ;
 		Signal_Out <= Signal_In;
 	end process;
