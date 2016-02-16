@@ -37,18 +37,7 @@ end Bit4Mul;
 
 architecture RTL of Bit4Mul is
 
-signal bit21a : STD_LOGIC_VECTOR (1 downto 0);
-signal bit21b : STD_LOGIC_VECTOR (1 downto 0);
-signal bit22a : STD_LOGIC_VECTOR (1 downto 0);
-signal bit22b : STD_LOGIC_VECTOR (1 downto 0);
-signal bit23a : STD_LOGIC_VECTOR (1 downto 0);
-signal bit23b : STD_LOGIC_VECTOR (1 downto 0);
-
 signal topPhi : STD_LOGIC_VECTOR (1 downto 0);
-
-signal top : STD_LOGIC_VECTOR (1 downto 0);
-signal mid : STD_LOGIC_VECTOR (1 downto 0);
-signal bot : STD_LOGIC_VECTOR (1 downto 0);
 
 signal TopTop : STD_LOGIC_VECTOR (1 downto 0);
 signal TopBot : STD_LOGIC_VECTOR (1 downto 0);
@@ -59,7 +48,8 @@ signal top2mul : STD_LOGIC_VECTOR (1 downto 0);
 signal mid2mul : STD_LOGIC_VECTOR (1 downto 0);
 signal bot2mul : STD_LOGIC_VECTOR (1 downto 0);
 
-
+signal topxor : STD_LOGIC_VECTOR (1 downto 0);
+signal botxor : STD_LOGIC_VECTOR (1 downto 0);
 
 begin
 
@@ -71,10 +61,11 @@ begin
 
 	HB1 : entity work.Bit2Mul port map(TopTop, BotTop, top2mul);
 	
-	
+	topxor <= (TopTop xor TopBot);
+	botxor <= (BotTop xor BotBot);
 	
 	HB2 : entity work.Bit2Mul port map(TopBot, BotBot, bot2mul);
-	HB3 : entity work.Bit2Mul port map((TopTop xor TopBot), (BotTop xor BotBot), mid2mul);
+	HB3 : entity work.Bit2Mul port map(topxor, botxor, mid2mul);
 	
 	HB4 : entity work.Phi port map(top2mul, topPhi);
 	

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/SBox.xst" -ofn "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/SBox.syr" 

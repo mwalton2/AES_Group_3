@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-02-16T10:45:57</DateModified>
+  <DateModified>2016-02-16T14:12:46</DateModified>
   <ModuleName>SBox</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Xilinx/Projets/AES_Group_3/AES_Group_3/iseconfig/SBox.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Xilinx/Projets/AES_Group_3/AES_Group_3</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Xilinx/Projets/AES_Group_3/AES_Group_3\</ImplementationReportsDirectory>
   <DateInitialized>2016-02-16T10:45:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

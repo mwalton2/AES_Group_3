@@ -1,0 +1,3 @@
+vhdl work "Sbox/Functions/Phi.vhd"
+vhdl work "Sbox/Functions/Bit2Mul.vhd"
+vhdl work "Sbox/Functions/Bit4Mul.vhd"

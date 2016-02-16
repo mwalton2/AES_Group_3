@@ -1,0 +1,3 @@
+vhdl work "C:\Xilinx\Projets\AES_Group_3\AES_Group_3\Sbox\Functions\Phi.vhd"
+vhdl work "C:\Xilinx\Projets\AES_Group_3\AES_Group_3\Sbox\Functions\Bit2Mul.vhd"
+vhdl work "C:\Xilinx\Projets\AES_Group_3\AES_Group_3\Sbox\Functions\Bit4Mul.vhd"
