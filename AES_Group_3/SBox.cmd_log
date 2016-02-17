@@ -5,3 +5,5 @@ map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o SBox_map
 par -w -intstyle ise -ol high -t 1 SBox_map.ncd SBox.ncd SBox.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SBox.twx SBox.ncd -o SBox.twr SBox.pcf 
 bitgen -intstyle ise -f SBox.ut SBox.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/SBox.xst" -ofn "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/SBox.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/SBox.xst" -ofn "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/SBox.syr" 

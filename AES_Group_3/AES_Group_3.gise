@@ -63,6 +63,11 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SBox_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SBox_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SBox_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_Bit4Mul_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_SBOX_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_SBOX_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_SBOX_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_SBOX_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -70,17 +75,132 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sbox.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sbox.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sbox.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1455639850" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1455639850">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455640854" xil_pn:in_ck="8444607964319446209" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1455640853">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sbox/Functions/Bit2Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Bit4Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/IDelta.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/IDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Invert.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Latch.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Latch8.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/MDelta.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/MDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/MultiplyLamda.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Mux2-1.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Phi.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/SquareX.vhd"/>
+      <outfile xil_pn:name="Sbox/SBox.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Bit2Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Bit4Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_IDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Idelta.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Invert.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Lamda.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_MDelta.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_MDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Phi.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_SBox.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_SquareX.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1455640233" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1225568760685327889" xil_pn:start_ts="1455640233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455640233" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4409619600562604087" xil_pn:start_ts="1455640233">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455639850" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5681175423497906834" xil_pn:start_ts="1455639850">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1455640854" xil_pn:in_ck="8444607964319446209" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1455640854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sbox/Functions/Bit2Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Bit4Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/IDelta.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/IDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Invert.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Latch.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Latch8.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/MDelta.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/MDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/MultiplyLamda.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Mux2-1.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/Phi.vhd"/>
+      <outfile xil_pn:name="Sbox/Functions/SquareX.vhd"/>
+      <outfile xil_pn:name="Sbox/SBox.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Bit2Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Bit4Mul.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_IDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Idelta.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Invert.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Lamda.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_MDelta.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_MDeltaAffine.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_Phi.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_SBox.vhd"/>
+      <outfile xil_pn:name="Sbox/TestBlocks/TB_SquareX.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1455640862" xil_pn:in_ck="8444607964319446209" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3585769214204939157" xil_pn:start_ts="1455640854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_SBOX_beh.prj"/>
+      <outfile xil_pn:name="TB_SBOX_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1455640863" xil_pn:in_ck="3688648369523648773" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4543203008244722440" xil_pn:start_ts="1455640862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_SBOX_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
     <transform xil_pn:end_ts="1455631985" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1455631985">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -109,11 +229,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1455636417" xil_pn:in_ck="-5235053892888142113" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="495809937206242286" xil_pn:start_ts="1455636395">
+    <transform xil_pn:end_ts="1455716319" xil_pn:in_ck="-5235053892888142113" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="495809937206242286" xil_pn:start_ts="1455716299">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="SBox.lso"/>
       <outfile xil_pn:name="SBox.ngc"/>
@@ -135,6 +253,8 @@
     <transform xil_pn:end_ts="1455636496" xil_pn:in_ck="3627055768578" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1826145250562870028" xil_pn:start_ts="1455636485">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="SBox.bld"/>
       <outfile xil_pn:name="SBox.ngd"/>
       <outfile xil_pn:name="SBox_ngdbuild.xrpt"/>
@@ -144,6 +264,7 @@
     <transform xil_pn:end_ts="1455636505" xil_pn:in_ck="3627055768579" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-684010993939208968" xil_pn:start_ts="1455636496">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SBox.pcf"/>
       <outfile xil_pn:name="SBox_map.map"/>
       <outfile xil_pn:name="SBox_map.mrp"/>
@@ -157,6 +278,7 @@
     <transform xil_pn:end_ts="1455636525" xil_pn:in_ck="4301403690922409116" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="3333849164707216606" xil_pn:start_ts="1455636505">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SBox.ncd"/>
       <outfile xil_pn:name="SBox.pad"/>
       <outfile xil_pn:name="SBox.par"/>
@@ -171,6 +293,9 @@
     <transform xil_pn:end_ts="1455636612" xil_pn:in_ck="3627055768447" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="-2672950586390118423" xil_pn:start_ts="1455636599">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="SBox.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="sbox.bgn"/>
@@ -183,6 +308,7 @@
     <transform xil_pn:end_ts="1455636525" xil_pn:in_ck="3627055768447" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1455636520">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SBox.twr"/>
       <outfile xil_pn:name="SBox.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

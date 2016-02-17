@@ -77,16 +77,16 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-      -- insert stimulus here 
-		--for J in 0 to 16 loop
-		--	for I in 0 to 16 loop
-		--			-- Increment xTime_in by 1
-		--			x <= x + "0001";
-					-- Wait 10 ns 
-		--			wait for 10 ns;
-		--		end loop;
-		--	y <= y + "0001";
-		--end loop;
+       --insert stimulus here 
+		for J in 0 to 16 loop
+			for I in 0 to 16 loop
+					-- Increment xTime_in by 1
+					x <= x + "0001";
+				-- Wait 10 ns 
+					wait for 10 ns;
+				end loop;
+			y <= y + "0001";
+		end loop;
 		
       wait;
    end process;

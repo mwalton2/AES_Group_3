@@ -70,6 +70,7 @@ begin
 		HA4 : entity work.Latch4 port map((MuxOut(7 downto 4)), Clk, TopLatch);		-- 4-Bit Latch to next pipe
 		HA5 : entity work.Latch4 port map((MuxOut(3 downto 0)), Clk, BottomLatch);	-- 4-Bit Latch to next pipe
 		HA6 : entity work.Latch4 port map(XORData, Clk, XORLatch);						-- 4-Bit Latch to next pipe
+		--Data_Out <= ( Data_In );
 		
 		--Pipeline 2
 		HA7 : entity work.SquareX port map(TopLatch, Squared);							-- Top Leg X^2

@@ -27,6 +27,7 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.all;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -51,7 +52,7 @@ ARCHITECTURE behavior OF TB_SBOX IS
    --Inputs
    signal Inverse : std_logic := '0';
    signal Clk : std_logic := '0';
-   signal Data_In : std_logic_vector(7 downto 0) := "10011001";
+   signal Data_In : std_logic_vector(7 downto 0) := "10001000";
 
  	--Outputs
    signal Data_Out : std_logic_vector(7 downto 0):= "00000000";
@@ -87,13 +88,14 @@ BEGIN
 
       wait for Clk_period*10;
 
-      -- insert stimulus here 
-		wait for Clk_period*10;
-		Data_In <= "11111111";
+			for I in 0 to 256 loop
+		 		-- Increment xTime_in by 1
+					Data_In <= Data_In + "00000001";
+					-- Wait 10 ns 
+					wait for Clk_period*10;
+				end loop;
 		
-		wait for Clk_period*10;
-		Data_In <= "10001000";
-		
+
       wait;
    end process;
 

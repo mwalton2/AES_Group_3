@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/TB_SBOX_isim_beh.exe" -prj "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/TB_SBOX_beh.prj" "work.TB_SBOX" 

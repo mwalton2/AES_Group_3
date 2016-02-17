@@ -1,0 +1,47 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Xilinx/Projets/AES_Group_3/AES_Group_3/TB_SBOX_isim_beh.exe -prj C:/Xilinx/Projets/AES_Group_3/AES_Group_3/TB_SBOX_beh.prj work.TB_SBOX 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Phi.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Bit2Mul.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/SquareX.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Mux2-1.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/MultiplyLamda.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/MDeltaAffine.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/MDelta.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Latch8.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Latch.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Invert.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/IDeltaAffine.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/IDelta.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Bit4Mul.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/SBox.vhd" into library work
+Parsing VHDL file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/TestBlocks/TB_SBox.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture rtl of entity MDelta [mdelta_default]
+Compiling architecture rtl of entity MDeltaAffine [mdeltaaffine_default]
+Compiling architecture rtl of entity Mux2 [mux2_default]
+Compiling architecture rtl of entity Latch4 [latch4_default]
+Compiling architecture rtl of entity SquareX [squarex_default]
+Compiling architecture rtl of entity MLamda [mlamda_default]
+Compiling architecture rtl of entity Bit2Mul [bit2mul_default]
+Compiling architecture rtl of entity Phi [phi_default]
+Compiling architecture rtl of entity Bit4Mul [bit4mul_default]
+Compiling architecture rtl of entity Invert [invert_default]
+Compiling architecture rtl of entity Latch8 [latch8_default]
+Compiling architecture rtl of entity IDeltaAffine [ideltaaffine_default]
+Compiling architecture rtl of entity IDelta [idelta_default]
+Compiling architecture rtl of entity SBox [sbox_default]
+Compiling architecture behavior of entity tb_sbox
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 33 VHDL Units
+Built simulation executable C:/Xilinx/Projets/AES_Group_3/AES_Group_3/TB_SBOX_isim_beh.exe
+Fuse Memory Usage: 33848 KB
+Fuse CPU Usage: 1405 ms

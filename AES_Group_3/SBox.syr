@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.32 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Reading design: SBox.prj
 
@@ -105,50 +105,41 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Bit2Mul.vhd" in Library work.
-Architecture rtl of Entity bit2mul is up to date.
+Entity <bit2mul> compiled.
+Entity <bit2mul> (Architecture <rtl>) compiled.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Phi.vhd" in Library work.
-Architecture rtl of Entity phi is up to date.
+Entity <phi> compiled.
+Entity <phi> (Architecture <rtl>) compiled.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/MDelta.vhd" in Library work.
-Entity <mdelta> compiled.
-Entity <mdelta> (Architecture <rtl>) compiled.
+Architecture rtl of Entity mdelta is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/MDeltaAffine.vhd" in Library work.
-Entity <mdeltaaffine> compiled.
-Entity <mdeltaaffine> (Architecture <rtl>) compiled.
+Architecture rtl of Entity mdeltaaffine is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Mux2-1.vhd" in Library work.
-Entity <mux2> compiled.
-Entity <mux2> (Architecture <rtl>) compiled.
+Architecture rtl of Entity mux2 is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Latch.vhd" in Library work.
-Entity <latch4> compiled.
-Entity <latch4> (Architecture <rtl>) compiled.
+Architecture rtl of Entity latch4 is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/SquareX.vhd" in Library work.
-Entity <squarex> compiled.
-Entity <squarex> (Architecture <rtl>) compiled.
+Architecture rtl of Entity squarex is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/MultiplyLamda.vhd" in Library work.
-Entity <mlamda> compiled.
-Entity <mlamda> (Architecture <rtl>) compiled.
+Architecture rtl of Entity mlamda is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Bit4Mul.vhd" in Library work.
-Entity <bit4mul> compiled.
-Entity <bit4mul> (Architecture <rtl>) compiled.
+Architecture rtl of Entity bit4mul is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Invert.vhd" in Library work.
-Entity <Invert> compiled.
-Entity <Invert> (Architecture <RTL>) compiled.
+Architecture rtl of Entity invert is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Latch8.vhd" in Library work.
-Entity <Latch8> compiled.
-Entity <Latch8> (Architecture <RTL>) compiled.
+Architecture rtl of Entity latch8 is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/IDeltaAffine.vhd" in Library work.
-Entity <IDeltaAffine> compiled.
-Entity <IDeltaAffine> (Architecture <RTL>) compiled.
+Architecture rtl of Entity ideltaaffine is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/IDelta.vhd" in Library work.
-Entity <IDelta> compiled.
-Entity <IDelta> (Architecture <RTL>) compiled.
+Architecture rtl of Entity idelta is up to date.
 Compiling vhdl file "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/SBox.vhd" in Library work.
-Entity <SBox> compiled.
-Entity <SBox> (Architecture <RTL>) compiled.
+Entity <sbox> compiled.
+Entity <sbox> (Architecture <rtl>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <SBox> in library <work> (architecture <RTL>).
+Analyzing hierarchy for entity <SBox> in library <work> (architecture <rtl>).
 
 Analyzing hierarchy for entity <MDelta> in library <work> (architecture <RTL>).
 
@@ -180,7 +171,7 @@ Analyzing hierarchy for entity <Phi> in library <work> (architecture <RTL>).
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <SBox> in library <work> (Architecture <RTL>).
+Analyzing Entity <SBox> in library <work> (Architecture <rtl>).
 Entity <SBox> analyzed. Unit <SBox> generated.
 
 Analyzing Entity <MDelta> in library <work> (Architecture <RTL>).
@@ -360,14 +351,14 @@ Synthesizing Unit <Bit2Mul>.
     Related source file is "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Bit2Mul.vhd".
     Found 1-bit xor2 for signal <a2a>.
     Found 1-bit xor2 for signal <a2b>.
-    Found 1-bit xor2 for signal <Output$xor0000> created at line 56.
-    Found 1-bit xor2 for signal <Output$xor0001> created at line 56.
+    Found 1-bit xor2 for signal <Output$xor0000> created at line 39.
+    Found 1-bit xor2 for signal <Output$xor0001> created at line 39.
 Unit <Bit2Mul> synthesized.
 
 
 Synthesizing Unit <Phi>.
     Related source file is "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/Sbox/Functions/Phi.vhd".
-    Found 1-bit xor2 for signal <Output$xor0000> created at line 41.
+    Found 1-bit xor2 for signal <Output$xor0000> created at line 24.
 Unit <Phi> synthesized.
 
 
@@ -652,12 +643,12 @@ Delay:               9.789ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.64 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.10 secs
  
 --> 
 
-Total memory usage is 303372 kilobytes
+Total memory usage is 307452 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
