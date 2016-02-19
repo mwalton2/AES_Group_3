@@ -1,5 +1,0 @@
-set -tmpdir "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/xst/projnav.tmp"
-set -xsthdpdir "C:/Xilinx/Projets/AES_Group_3/AES_Group_3/xst"
-elaborate
--ifn Bit4Mul.prj
--ifmt mixed

@@ -50,9 +50,9 @@ ARCHITECTURE behavior OF TB_SBOX IS
     END COMPONENT;
 
    --Inputs
-   signal Inverse : std_logic := '0';
+   signal Inverse : std_logic := '1';
    signal Clk : std_logic := '0';
-   signal Data_In : std_logic_vector(7 downto 0) := "10001000";
+   signal Data_In : std_logic_vector(7 downto 0) := "00000000";
 
  	--Outputs
    signal Data_Out : std_logic_vector(7 downto 0):= "00000000";
