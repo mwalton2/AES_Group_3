@@ -30,16 +30,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Stage0 is
-    Port ( Data_In : in  STD_LOGIC_VECTOR (127 downto 0);
-           Key_In : in  STD_LOGIC_VECTOR (127 downto 0);
-           Data_Out : out  STD_LOGIC_VECTOR (127 downto 0));
+    Port ( Plain_Text : in  STD_LOGIC_VECTOR (127 downto 0);
+           Cypher_Key : in  STD_LOGIC_VECTOR (127 downto 0);
+           State_0 : out  STD_LOGIC_VECTOR (127 downto 0));
 			  
 end Stage0;
 
 architecture RTL of Stage0 is
 
 begin
-	RK : entity work.Round_Key port map ( Key_In, Data_In, Data_Out);
-
+	RK : entity work.Round_Key port map ( Plain_Text, Cypher_Key, State_0);
 end RTL;
 

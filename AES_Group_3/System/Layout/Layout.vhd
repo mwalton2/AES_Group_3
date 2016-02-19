@@ -33,9 +33,9 @@ entity Layout is
     Port ( Plain_Text : in  STD_LOGIC_VECTOR (127 downto 0);
            Cypher_Key : in  STD_LOGIC_VECTOR (127 downto 0);
 			  Clk : in  STD_LOGIC ;
-           Cypher_Text : out  STD_LOGIC_VECTOR (127 downto 0));
-			  
-
+           Cypher_Text : out  STD_LOGIC_VECTOR (127 downto 0);
+			  DIR : in STD_LOGIC);
+			 
 end Layout;
 
 architecture RTL of Layout is
@@ -68,44 +68,75 @@ architecture RTL of Layout is
 	signal LAT_State_9 : STD_LOGIC_VECTOR (127 downto 0);
 	signal LAT_State_10 : STD_LOGIC_VECTOR (127 downto 0);
 	
-	signal Key_Out1 : STD_LOGIC_VECTOR (127 downto 0);
+	--signal Key_Out1 : STD_LOGIC_VECTOR (127 downto 0);
+	signal KS1: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS2: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS3: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS4: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS5: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS6: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS7: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS8: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS9: STD_LOGIC_VECTOR (127 downto 0);
+	signal KS10: STD_LOGIC_VECTOR (127 downto 0);
+	
+	signal LATKS1: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS2: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS3: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS4: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS5: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS6: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS7: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS8: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS9: STD_LOGIC_VECTOR (127 downto 0);
+	signal LATKS10: STD_LOGIC_VECTOR (127 downto 0);
+	
+	--signal DIR : STD_LOGIC ;
+
 	--and on to latstae 10
 	
 	--signal Key_In1
 	
 begin
-
-
---Round 0 is just add the cypher key
-	--Add cypher key
-	
-	
-	--Should have a latch at the front/input??
-	
+--this is forwards 
+   KS : entity work.KeySchedule port map (Cypher_Key, KS1, KS2, KS3, KS4, KS5, KS6, KS7, KS8, KS9, KS10, LATKS1, LATKS2, LATKS3, LATKS4, LATKS5, LATKS6, LATKS7, LATKS8, LATKS9, LATKS10, Clk, DIR );
 	
 	Stage0 : entity work.Stage0 port map(Plain_Text, Cypher_Key, State_0);
-		--Round 0 is only adding the cypher key to the cypher text
+	--Round 0 is only adding the cypher key to the cypher text
 	LAT0 : entity work.LAT128 port map(State_0, Clk, LAT_State_0);
+	--Cypher_Text <= LAT_State_0;
 	
---Round 1-9 are the repetitivie rounds aka (Round)
-	--Stage1 : entity work.Stage port map (LAT_State_0, Cypher_Key, CLk, State_1, Key_Out1);
-	--LAT1 : entity work.Latch128 port map(State_1, Clk, LAT_State_1);
-   --Stage2 : entity work.Stage port map (LATState1, Key_In2, CLk, State2, Key_Out2);
-	--LAT2 : entity work.Latch128 port map(State2, Clk, LATState2);
-	--.
-	--.
-	--.
-	--Round9
+	--Round 1-9 are the repetitivie rounds aka (Round)
+	Stage1 : entity work.Stage port map (LAT_State_0, KS1, CLk, State_1, DIR);
+   LAT1 : entity work.Latch128 port map(State_1, Clk, LAT_State_1);
+   
+	Stage2 : entity work.Stage port map (LAT_State_1, KS2, CLk, State_2, DIR);
+	LAT2 : entity work.Latch128 port map(State_2, Clk, LAT_State_2);
+	
+   Stage3 : entity work.Stage port map (LAT_State_2, KS3, CLk, State_3, DIR);
+	LAT3 : entity work.Latch128 port map(State_3, Clk, LAT_State_3);
+	
+   Stage4 : entity work.Stage port map (LAT_State_3, KS4, CLk, State_4, DIR);
+	LAT4 : entity work.Latch128 port map(State_4, Clk, LAT_State_4);	
+	
+	Stage5 : entity work.Stage port map (LAT_State_4, KS5, CLk, State_5, DIR);
+	LAT5 : entity work.Latch128 port map(State_5, Clk, LAT_State_5);
+	
+	Stage6 : entity work.Stage port map (LAT_State_5, KS6, CLk, State_6, DIR);
+	LAT6 : entity work.Latch128 port map(State_6, Clk, LAT_State_6);
+	
+	Stage7 : entity work.Stage port map (LAT_State_6, KS7, CLk, State_7, DIR);
+	LAT7 : entity work.Latch128 port map(State_7, Clk, LAT_State_7);
+	
+	Stage8 : entity work.Stage port map (LAT_State_7, KS8, CLk, State_8, DIR);
+	LAT8 : entity work.Latch128 port map(State_8, Clk, LAT_State_8);
+	
+	Stage9 : entity work.Stage port map (LAT_State_8, KS9, CLk, State_9, DIR);
+	LAT9 : entity work.Latch128 port map(State_9, Clk, LAT_State_9);
 
---Round 10 is similar to round 1-9 but without the
+	Stage10 : entity work.Stage10 port map (LAT_State_9, KS10, Clk, Cypher_Text, DIR);
+	
 
-
---Fully Pipelined
-	--Reg between each round
-	--Reg between each module within a round
---Non-looping
-	--The whole system has been unrolled
-	--One big row of AES to try and get it to work
 
 end RTL;
 
