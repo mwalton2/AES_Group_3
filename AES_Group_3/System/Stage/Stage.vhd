@@ -35,16 +35,9 @@ entity Stage is
            Clk : in  STD_LOGIC ;
            Data_Out : out  STD_LOGIC_VECTOR (127 downto 0);
 			   DIR : in STD_LOGIC);
-			  --Key_Out : out STD_LOGIC_VECTOR (128 downto 0));
 end Stage;
 
 architecture RTL of Stage is
-
-
-   --signal SB_Out1 : STD_LOGIC_VECTOR (31 downto 0) ;
-	--signal SB_Out2 : STD_LOGIC_VECTOR (31 downto 0) ;
-	--signal SB_Out3 : STD_LOGIC_VECTOR (31 downto 0) ;
-	--signal SB_Out3 : STD_LOGIC_VECTOR (31 downto 0) ;
 	
 	signal SB_Out : STD_LOGIC_VECTOR (127 downto 0) ;
 	signal LAT_SB_Out :STD_LOGIC_VECTOR (127 downto 0) ;
@@ -81,10 +74,10 @@ begin
 	LAT_SB_Out3 <= SB_Out(111 downto 104) & SB_Out(79 downto 72) & SB_Out(47 downto 40) & SB_Out(15 downto 8);
 	LAT_SB_Out4 <= SB_Out(103 downto 96) & SB_Out( 71 downto 64) & SB_Out(39 downto 32) & SB_Out( 7 downto 0);
 	
-	--MC : entity work.mix_columns port map (LAT_SB_Out1 , LAT_SB_Out2  ,LAT_SB_Out3, LAT_SB_Out4, MC_Out); 
-	LAT2: entity work.LAT128 port map (MC_Out, Clk, LAT_MC_Out);
+	MC : entity work.mix_columns port map (LAT_SB_Out1 , LAT_SB_Out2 ,LAT_SB_Out3, LAT_SB_Out4, MC_Out); 
+	--LAT2: entity work.LAT128 port map (MC_Out, Clk, LAT_MC_Out);
 	
-	RK: entity work.Round_Key port map (Key_In, LAT_MC_Out, RK_Out);
+	RK: entity work.Round_Key port map (Key_In, MC_Out, RK_Out);
 	LAT3: entity work.LAT128 port map (RK_Out, Clk, Data_Out); -- may not need this as I latch between stages anyways. Will test with and without it
 	
 
